@@ -28,7 +28,7 @@ int main()
 
     for(int i = 0; i<6; i++)
     {
-        for(int j = 5; j >=0; j--)
+        for(int j = 5; j >=i; j--)
         {
             if(strlen(words[j].txt) > strlen(words[i].txt))
             {
