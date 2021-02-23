@@ -5,7 +5,6 @@ class NumberList
     int numbers[10];
     int count;
 public:
-
     // count will be 0
     void Init() {
         count = 0;
@@ -21,9 +20,9 @@ public:
     }
 
     // will sort the numbers vector
-    bool Sort() {
+    void Sort() {
         for (int i = 0; i < count; i++) {
-            for (int j = i; j > 0; j++) {
+            for (int j = i+1; j <=count; j++) {
                 if (numbers[i] > numbers[j])
                 {
                     int aux = numbers[i];
@@ -37,8 +36,9 @@ public:
     // will print the current vector
     void Print() {
         for (int i = 0; i < count; i++) {
-            printf("%d", numbers[i]);
+            printf("%d ", numbers[i]);
         }
+        printf("\n");
     }
 
 };

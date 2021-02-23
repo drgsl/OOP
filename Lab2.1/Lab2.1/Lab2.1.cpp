@@ -7,10 +7,18 @@
 
 int main()
 {
-    NumberList nl;
+    NumberList list;
 
-    nl.Init();
+    list.Init();
+    
+    int i = 10;
+    while (list.Add(i)) {
+        i--;
+        list.Print();
+    }
 
+    list.Sort();
+    list.Print();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
