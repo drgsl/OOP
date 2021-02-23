@@ -9,17 +9,17 @@
 int compareNames(Student s1, Student s2) {
     if (strlen(s1.getName()) > strlen(s2.getName()))
         return 1;
-    else if (strlen(s1.getName()) < strlen(s2.getName()))
+    if (strlen(s1.getName()) < strlen(s2.getName()))
         return -1;
-    else
+
         return 0;
 }
 int compareGradeMath(Student s1, Student s2) {
     if (s1.getGradeMath() > s2.getGradeMath())
         return 1;
-    else if (s1.getGradeMath() < s2.getGradeMath())
+    if (s1.getGradeMath() < s2.getGradeMath())
         return -1;
-    else
+  
         return 0;
 }
 int compareGradeEnglish(Student s1, Student s2) {
