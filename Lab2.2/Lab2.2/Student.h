@@ -7,6 +7,7 @@ private:
 	float gradeEnglish;
 	float gradeHistory;
 	float gradeAverage;
+	float updateGradeAverage();
 public:
 	void  setName(const char name[]);
 	char* getName();
